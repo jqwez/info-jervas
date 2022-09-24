@@ -1,0 +1,330 @@
+:root {
+    --fontColor: "black";
+    --linkColor: var(--mainBlue);
+    --bgColor: whitesmoke;
+    --mainBlue: rgb(0, 119, 181);
+    --darkGray: rgb(49, 51, 53);
+    --mediumGray: rgb(134, 135, 138);
+    --lightGray: rgb(202, 204, 206);
+    --accentBlue: rgb(0, 160, 220);
+    --accentPurple: rgb(141, 108, 171);
+    --accentRed: rgb(221, 81, 67);
+    --accentOrange: rgb(230, 133, 35);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    transition: ease-in-out
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--lightGray);
+}
+
+
+::-webkit-scrollbar-track {
+    background: var(--lightGray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--linkColor);
+    border-radius: 20px;
+}
+
+
+.normal {
+    background-color: var(--bgColor);
+}
+
+.header {
+    border-style: solid;
+    border-color: black;
+    border-width: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--bgColor);
+}
+
+.hamburger {
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.hamburger .bar {
+    height: 4px;
+    width: 100%;
+    background-color: var(--linkColor);
+    border-radius: 10px;
+
+}
+
+
+
+.navTitle {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--linkColor);
+}
+
+.navTitle a {
+    text-decoration: none;
+    color: var(--linkColor);
+
+}
+
+.navlist ul {
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    font-size: 1.5rem;
+    list-style-type: none;
+}
+
+.navlinks {
+    color: deeppink;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: var(--linkColor);
+    padding: 1rem;
+
+
+}
+
+.navlinks a:hover {
+    color: var(--accentOrange);
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.sun {
+    fill: var(--linkColor)
+}
+
+.sun:hover {
+    fill: var(--accentOrange);
+    transition: ease-in-out 0.3s;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+.textarea {
+    padding: 10px;
+    font-size: 3rem;
+    background: var(--linkColor);
+    color: var(--bgColor);
+    justify-content: center;
+    text-align: center;
+}
+
+.textarea2 {
+    padding: 10px;
+    font-size: 3rem;
+    background: var(--bgColor);
+    color: var(--linkColor);
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;;
+}
+
+#bottom:hover {
+    cursor: pointer;
+}
+
+
+h1 {
+    color: var(--linkColor);
+    
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tech {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@keyframes rotateTech {
+    from { rotate: 15deg}
+    to { rotate: -15deg}
+}
+
+.tech .path {
+    width: 5rem;
+    padding: 0 20px 0 20px;
+    fill: var(--linkColor);
+    transition: fill 0.5s;
+    position: relative;
+    animation: rotateTech 1s ease-in-out alternate infinite;
+
+    
+}
+
+
+
+@keyframes appear {
+   from {
+        translate: 800px;
+        opacity: 0%}
+   to {
+        translate: 0%;
+        opacity: 100%;
+}
+
+}
+
+.appear { 
+    animation: appear ease 1.5s;
+}
+
+.invisible {
+    opacity: 0%;
+}
+
+.socials .path {
+    width: 5rem;
+    padding: 0 20px 0 20px;
+    fill: var(--linkColor);
+    transition: fill 0.5s;
+    
+}
+
+.tech .path:hover {
+    transform: scale(150%);
+    transition: transform 0.3s;
+}
+
+
+@keyframes socialclick {
+    0% {rotate: 0;}
+    25% {rotate: 20deg;}
+    50% {rotate: -20deg;}
+    100% {rotate: 0deg;}
+
+}
+
+.socials .path:hover {
+    fill: var(--accentOrange);
+    transition: ease-in-out 0.3s;
+    animation: socialclick .3s;
+}
+
+
+
+
+@keyframes headline {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+}
+
+@keyframes headline2 {
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes headline3 {
+    0% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.headline {
+    font-size: 3rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#veteran {
+    animation-name: headline;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+#pilot {
+    animation-name: headline2;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+#dev {
+    animation-name: headline3;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes dropdown {
+    from {
+        translate: 0;
+    }
+    to {
+        transform: 0;
+    }    
+}
+
+@media (max-width: 740px) {
+    .hamburger { 
+        display: flex;
+    }
+
+    .navTitle {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .navlist {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navlist ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navlist.active {
+        display: flex;
+        animation: dropdown 0.4s;
+    }
+
+    .headline {
+        display: flex;
+        justify-content: center;
+    }
+}
