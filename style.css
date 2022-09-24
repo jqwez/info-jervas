@@ -223,6 +223,7 @@ h1 {
 .tech .path:hover {
     transform: scale(150%);
     transition: transform 0.3s;
+    animation: none;
 }
 
 
