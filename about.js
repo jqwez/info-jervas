@@ -38,9 +38,7 @@ const toggleTheme = () => {
     }}
 
 
-sun.addEventListener('click', () => {
-        toggleTheme();
-    })
+sun.onclick = toggleTheme
 
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
