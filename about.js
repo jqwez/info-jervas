@@ -20,22 +20,18 @@ const begin = document.getElementById('top');
 
 
 
-
-
 const toggleTheme = () => {
     if (localStorage.getItem("theme") == "dark") {
         document.getElementById('theme_css').href = '../style.css'
         localStorage.setItem("theme", "light")
         return console.log("these set light")
     }
-    if (localStorage.getItem("theme") == "light") {
+    else {
         document.getElementById('theme_css').href = '../dark.css'
         localStorage.setItem("theme", "dark")
         return console.log("these set dark")
 }
-    else {
-        localStorage.setItem("theme", "light");
-    }}
+}
 
 
 sun.onclick = toggleTheme
