@@ -175,11 +175,18 @@ h1 {
     margin-top: 20px;
 }
 
+@keyframes rotateTech {
+    from { rotate: 15deg}
+    to { rotate: -15deg}
+}
+
 .tech .path {
     width: 5rem;
     padding: 0 20px 0 20px;
     fill: var(--fontColor);
     transition: fill 0.5s;
+    position: relative;
+    animation: rotateTech 1s ease-in-out alternate infinite;
     
 }
 
@@ -213,6 +220,7 @@ h1 {
 .tech .path:hover {
     transform: scale(150%);
     transition: transform 0.3s;
+    animation: none;
 }
 
 
