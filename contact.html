@@ -44,7 +44,8 @@
                     <textarea class="inputs" type="text" id="message" name="message" style="height: 4rem" required></textarea>
                 </div>
                 <div>
-                    <button class="btn" id="send" type="submit" onclick="formSubmit()" >Submit</button>
+                    <button class="btn fail-btn" onclick="returnHome()" style="margin-right: 1rem;">BACK</button>
+                    <button class="btn success-btn" id="send" type="submit">SUBMIT</button>
                 </div>
                 
                     </div>
@@ -68,5 +69,9 @@
 <footer>
    
     <script type="module" src="./main/contact_script.js"></script>
+    <script> 
+    function returnHome() {
+        window.location = "https://info.jervas.com/"
+    }</script>
 </footer>
 </html>

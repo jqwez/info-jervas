@@ -44,10 +44,22 @@ section {
 
 .btn:hover {
     background-color: var(--accentOrange);
+    color: var(--fontColor);
+
 }
 
 .btn:active {
     background-color: var(--accentBlue);
+}
+
+.success-btn {
+    border-color: var(--accentBlue);
+    color: var(--accentBlue);
+}
+
+.fail-btn {
+    border-color: var(--accentRed);
+    color: var(--accentRed);
 }
 
 .banner {
