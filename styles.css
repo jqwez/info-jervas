@@ -4,6 +4,7 @@
     --fontColor: rgb(236, 236, 236);
     --linkColor: var(--mainBlue);
     --bgColor: rgb(22, 22, 27);
+    --darkerbgColor: rgb(14, 14, 17);
     --mainBlue: rgb(0, 119, 181);
     --darkGray: rgb(49, 51, 53);
     --mediumGray: rgb(134, 135, 138);
@@ -29,7 +30,11 @@ section {
     text-align: center;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
+    min-height: 108vh;
+}
+
+.alt {
+    background-color: var(--darkerbgColor) !important;
 }
 
 .btn {
@@ -137,6 +142,11 @@ section {
 
 .tech .path:nth-child(2) {
     transition-delay: 500ms;
+}
+
+.tech-symbols div div:hover {
+    transform: scale(125%);
+    transition: 0.3s ease-in-out;
 }
 
 ::-webkit-scrollbar {
