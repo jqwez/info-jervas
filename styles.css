@@ -116,17 +116,17 @@ section {
 @keyframes down-finger {
     0% {opacity: 0;}
     50% {opacity: 0%}
-    60% {transform: translateY(9rem);}
-    65% {transform: translateY(7rem);}
-    70% {transform: translateY(9rem);}
-    75% {transform: translateY(7rem);}
-    80% {transform: translateY(9rem);}
-    85% {transform: translateY(7rem);}
+    60% {transform: translateY(5rem);}
+    65% {transform: translateY(3rem);}
+    70% {transform: translateY(5rem);}
+    75% {transform: translateY(3rem);}
+    80% {transform: translateY(5rem);}
+    85% {transform: translateY(2rem);}
     100% {opacity: 100%;}
 }
 
 .down-finger {
-    transform: translateY(9rem);
+    transform: translateY(5rem);
     animation: down-finger 10s;
 }
 
