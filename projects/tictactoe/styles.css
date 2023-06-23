@@ -1,0 +1,108 @@
+:root {
+    background-color: rgb(24, 24, 24);
+    color: orange;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#body {
+    display: flex;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 5rem;
+    background-color: rgb(24, 24, 24);
+    opacity: 90%;
+    border: orange 3px solid;
+    padding: 6rem 14rem 4rem 14rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal button {
+    margin-top: 2rem;
+    background-color: rgb(0, 119, 181);
+    color: whitesmoke;
+    border-color: darkblue;
+}
+
+.modal span {
+    font-size: 3rem;
+}
+
+#game {
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.column div {
+    height: 10rem;
+    width: 10rem;
+    text-align: center;
+    align-items: center;
+    font-size: 6rem;
+    border: rgb(0, 119, 181) 3px solid;
+}
+
+.col0 {
+    border-left: transparent 1px solid !important;   
+}
+
+.col2 {
+    border-right: transparent 1px solid !important;   
+}
+
+.row0 {
+    border-top: transparent 1px solid !important;   
+}
+
+.row2 {
+    border-bottom: transparent 1px solid !important;   
+}
+
+#buttons-div {
+    margin-top: 5rem;
+}
+
+.btn {
+    font-family: Arial;
+    font-weight: 600;
+    color: darkgreen;
+    background-color: lightgreen;
+    border: darkgreen 2px solid;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 5px 10px 5px 10px;
+    transition: all 0.1s ease-in-out ;   
+}
+
+.btn:hover {
+    padding: 8px 14px 8px 14px;
+    filter: brightness(120%)
+}
+
+.btn:active {
+    transform: scale(90%)
+}
+
+#reset-btn {
+    color: darkred;
+    background-color: lightcoral;
+    border: red 2px solid;
+}
