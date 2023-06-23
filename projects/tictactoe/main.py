@@ -37,10 +37,10 @@ winning_map = {}
 def check_game_over():
     for condition in winning_conditions:
         if all(map(lambda x: square_statuses[x]=="X", condition)):
-            display_modal("X Wins")
+            display_modal("X Wins!")
             return True
         if all(map(lambda x: square_statuses[x]=="O", condition)):
-            display_modal("O Wins")
+            display_modal("O Wins!")
             return True
         if all(square_statuses):
             display_modal("It's a Draw")
