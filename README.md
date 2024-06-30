@@ -11,3 +11,7 @@ Changed from a bright default theme to something a little sleeker. Feel free to 
 20221209
 
 Added a webhook so that changes in this repository are automatically updated on my server. I'll look to add that to any apps as well!
+
+20240630
+
+Redone in Solid JS and Dockerized
