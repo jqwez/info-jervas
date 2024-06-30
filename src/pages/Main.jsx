@@ -32,7 +32,8 @@ export default function Main(props) {
           <h1>I like solving problems in the cloud</h1>
         </Section>
         <Section>
-          <h1>I like using these</h1>
+          <h1>Here's a Game!</h1>
+          <a href="/projects/tictactoe/" style="text-decoration:none;color:white;"> Tic Tac Toe </a>
         </Section>
         <Section>
           <h1> Contact Me for you next Project </h1>
