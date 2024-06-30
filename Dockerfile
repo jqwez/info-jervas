@@ -1,22 +1,18 @@
-FROM node:lts AS build
+FROM node:lts AS builder
+
+WORKDIR /app
 
 RUN apt update && apt install git
 
-RUN git clone https://github.com/jqwez/
+RUN git clone https://github.com/jqwez/info-jervas
 
-COPY package*.json ./
-
-RUN npm install
-
-COPY . .
-
-RUN npm run build
+RUN cd info-jervas && npm install && npm run build
 
 FROM caddy:latest
 
-COPY Caddyfile /etc/caddy/Caddyfile
+COPY --from=builder /app/info-jervas/Caddyfile /etc/caddy/CaddyFile
 
-COPY dist /app
+COPY --from=builder /app/info-jervas/dist /app
 
 EXPOSE 80
 
