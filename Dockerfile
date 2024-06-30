@@ -10,7 +10,7 @@ RUN cd info-jervas && npm install && npm run build
 
 FROM caddy:latest
 
-COPY --from=builder /app/info-jervas/Caddyfile /etc/caddy/CaddyFile
+COPY --from=builder /app/info-jervas/Caddyfile /etc/caddy/Caddyfile
 
 COPY --from=builder /app/info-jervas/dist /app
 
