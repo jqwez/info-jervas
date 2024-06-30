@@ -1,0 +1,16 @@
+@keyframes finger {
+  0% {opacity: 0%;}
+  50% {opacity: 0%;}
+  60% {transform: translateY(5rem);}
+  65% {transform: translateY(3rem);}
+  70% {transform: translateY(5rem);}
+  75% {transform: translateY(3rem);}
+  80% {transform: translateY(5rem);}
+  85% {transform: translateY(2rem);}
+  100% {opacity: 100%;}
+}
+
+.finger {
+  transform: translateY(5rem);
+  animation: finger 4s;
+}

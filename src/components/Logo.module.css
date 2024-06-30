@@ -1,0 +1,10 @@
+.logo {
+  height: 2rem;
+  width: 2rem;
+  fill: white;
+}
+
+.logo:hover {
+  transform: scale(110%);
+  fill: orange;
+}

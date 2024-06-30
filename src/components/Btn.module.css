@@ -1,0 +1,18 @@
+.btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: whitesmoke;
+  border: solid 1px whitesmoke;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  background:none;
+  cursor: pointer;
+  transform: scale(90%);
+}
+
+.btn:hover {
+  background: orange;
+  color: rgb(22, 22, 27);
+  border: solid 1px rgb(22, 22, 27);
+  transform: scale(110%);
+}
