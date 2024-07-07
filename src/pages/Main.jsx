@@ -33,7 +33,7 @@ export default function Main(props) {
         </Section>
         <Section>
           <h1>Here's a Game!</h1>
-          <a href="/projects/tictactoe/" style="text-decoration:none;color:white;"> Tic Tac Toe </a>
+          <a href="https://jervas.com/projects/tictactoe/" style="text-decoration:none;color:orange;"> Tic Tac Toe </a>
         </Section>
         <Section>
           <h1> Contact Me for you next Project </h1>
