@@ -1,4 +1,10 @@
-http://localhost {
+{
+	servers {
+		trusted_proxies static private_ranges
+	}
+}
+
+http://localhost, http://jervas.com {
 	root * /app
 	file_server
 }
