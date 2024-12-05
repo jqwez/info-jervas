@@ -1,4 +1,4 @@
 http://jervas.com {
-	root * /app/dist
+	root * /app
 	file_server
 }
