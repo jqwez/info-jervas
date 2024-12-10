@@ -26,7 +26,7 @@ export default function Main(props) {
           <DownFinger onClick={()=>scrollToElement(section2)} />
         </Section>
         <Section ref={section2}>
-          <h1> Based in Virginia</h1>
+          <h1> Based in California</h1>
         </Section>
         <Section ref={section2}>
           <h1>I like solving problems in the cloud</h1>
