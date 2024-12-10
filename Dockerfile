@@ -4,7 +4,8 @@ WORKDIR /app
 
 RUN apt update && apt install git
 
-RUN git clone https://github.com/jqwez/info-jervas
+RUN git clone https://github.com/jqwez/info-jervas && \
+    echo "Cloned repo at $GIT_TIMESTAMP"
 
 RUN cd info-jervas && npm install && npm run build
 
